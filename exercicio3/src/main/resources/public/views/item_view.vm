@@ -1,0 +1,18 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Item(s)</title>
+    </head>
+    <body>
+        #foreach ($book in $books)
+            <h1>$book.getId()</h1>
+            <ul>
+                <li>$book.getNome()</li>
+                <li>$book.getAutor()</li>
+                <li>$book.getDataPublicacao()</li>
+                <li>$book.getIsbn()</li>
+            </ul>
+        #end
+        <button onclick="history.back()">Voltar</button>
+    </body>
+</html>
